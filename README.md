@@ -91,7 +91,7 @@ compound_interest(p; r)
 
 def compound_interest(principal, rate, time): &nbsp; added ":" at the end and changed "principle" to "principal everywhere"     
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  #removed the second unnecessary line     
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount = principal * ( ((1 + rate / 100) ** time))  &nbsp; #replaced multiplication operator * by exponentiation operator **    
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount = principal * ( ((1 + rate / 100) ** time))   #replaced multiplication operator * by exponentiation operator **    
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CI = Amount - principal    
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Compound interest is", Ci)  &nbsp; #capital "I" in CI
 
