@@ -20,7 +20,7 @@ print("A")
 #### Answer 1
 K = [3,1,9,'b','a']   &nbsp;&nbsp;  # "]" was missing   
 for i in K:   
- &nbsp;&nbsp;&nbsp; if i=='a': &nbsp; #a should be a string and added ":" at the end   
+ &nbsp;&nbsp;&nbsp; if i=='a': &nbsp; #a is a character and also added ":" at the end   
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   break  &nbsp; &nbsp; #removed ":"         
 &nbsp;&nbsp;&nbsp; else:    
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("A") &nbsp; &nbsp;  #indented
@@ -41,8 +41,8 @@ l += 1
 K=int(input("Enter a number: "))   
 L = 0   
 for j in range(1,K,2): &nbsp; &nbsp; #added ":" at the end   
- &nbsp; &nbsp; &nbsp;  L += 1  &nbsp;  # capital "L" required and indented   
-&nbsp; &nbsp; &nbsp;   if j%2==0: &nbsp; # operator "==" instead of assignment operator "="   
+ &nbsp; &nbsp; &nbsp;  L += 1  &nbsp;  # replaced "l" with "L" and indentation required   
+&nbsp; &nbsp; &nbsp;   if j%2==0: &nbsp; # comparison operator "==" instead of assignment operator "="   
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Code Chef " * 2) &nbsp; #indented     
 &nbsp; &nbsp; &nbsp;  else:    
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Code Chef " * 3) &nbsp; #indented    
@@ -62,12 +62,12 @@ printf("list2 =", list2)
 print ["list3 =", list3}        
 
 #### Answer 3
-def extendList(val, list=[]):  #replaced "==" with "=" and ";" with ","     
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  list.append(val) # indented  
+def extendList(val, list=[]):  #replaced comparison operator "==" with assignment operator "=" and also ";" with ","     
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  list.append(val)  #indented  
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return list   
 list1 = extendList(10) &nbsp; #replaced "E" with "e" in the function extend()    
 list2 = extendList(123,[])     
-list3 = extendList('a') &nbsp; # "+" removed and added closing " ' " after a  
+list3 = extendList('a') &nbsp; #list3 is uninitialized so removed "+" from "+=" and also added closing " ' " after a  
 print ("list1 =", list1) &nbsp; # replaced "[]" to "()"   
 print("list2 =", list2) &nbsp; #"printf" to "print"   
 print("list3 =", list3) &nbsp; #replaced "[" with "(" and "}" with ")"    
@@ -89,16 +89,16 @@ compound_interest(p; r)
 
 #### Answer 4
 
-def compound_interest(principal, rate, time): &nbsp; added ":" at the end   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  #removed the second unnecessary line   
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    Amount = principal*((1 + rate / 100)**time)) #replaced * by **
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   CI = Amount - principal  
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Compound interest is", CI) &nbsp; # capital "I" in CI   
+def compound_interest(principal, rate, time): &nbsp; added ":" at the end and changed "principle" to "principal everywhere"     
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  #removed the second unnecessary line     
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Amount = principal * ( ((1 + rate / 100) ** time))  &nbsp; #replaced multiplication operator * by exponentiation operator **    
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CI = Amount - principal    
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print("Compound interest is", Ci)  &nbsp; #capital "I" in CI
 
 p = float(input("enter the principal ")) &nbsp; #"principle" to "principal"     
 r = float(input("enter the rate ")) &nbsp;  "principle" to "rate"     
 t = float(input("enter the time "))  &nbsp; # replaced "principle" to "time"     
-compound_interest(p, r, t) &nbsp; #added argument t and replaced ";" by ","
+compound_interest(p, r, t) &nbsp; #added argument t and also replaced ";" by ","
 
 # Task 2
 ## MCQ
